@@ -1,26 +1,48 @@
+<!-- 
+ * Ethereum Vue App
+ *
+ * @category   Application_Frontend
+ * @package    ethereum-vue-app
+ * @author     Suman Barua
+ * @developer  Suman Barua <sumanbarua576@gmail.com>
+ -->
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <EthereumPage />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EthereumPage from "./components/EthereumPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    EthereumPage,
+  },
+};
 </script>
 
 <style>
+h1 {
+  margin-top: 0px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#app > div {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+}
+#app > div > div {
+  width: 70%;
+  padding: 3rem;
+  box-shadow: 11px 10px 38px 0 rgb(46 63 99 / 15%);
 }
 </style>

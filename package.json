@@ -1,15 +1,16 @@
 {
-  "name": "my-vue-app",
+  "name": "ethereum-vue-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "npm run lint && vue-cli-service serve",
+    "build": "npm run lint && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.6.2",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "vue": "^3.2.36"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
